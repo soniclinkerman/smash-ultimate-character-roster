@@ -57,6 +57,7 @@ a{
     color: black;
 }
 nav {
+    margin-bottom: 4rem;
     border-bottom: 2px solid black;
 }
 
