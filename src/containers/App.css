@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+body {
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+
+h1 {
+    font-family: "Super Smash 4.1";
+    color: #000;
+}
+
+.copyright {
+    color: #929292;
+}
+
+/* CHARACTER CARD */
+
+.character--card{
+    display: grid;
+    margin: 0 auto;
+}
+
+.character-image{
+    order: 0;
+    margin: auto;  
+}
+
+.character-name{
+    order: 1;
+}
+
+.character-series{
+     order: 2; 
+}
+
+.character-desc{
+    order: 3;
+}
+
+.go-back-link{
+    color: black;
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 1em;
+}
+a{
+    color: black;
+}
+nav {
+    border-bottom: 2px solid black;
+}
+
+nav a{
+    text-decoration: none;
+
+}
