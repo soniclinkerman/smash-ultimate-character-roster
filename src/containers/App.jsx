@@ -1,11 +1,8 @@
-import React, { Component } from "react";
-import CardList from "../components/Cardlist";
-import SearchBox from "../components/SearchBox";
-import Scroll from "../components/Scroll";
-import {characters} from "../characters";
+import React from "react";
+// import {characters} from "../characters";
 import "./App.css"
 import ErrorBoundary from "../components/ErrorBoundary";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import Main from "../components/Main";
 import CharacterDetail from "../containers/CharacterDetail";
 
@@ -37,19 +34,18 @@ function App() {
     //         return (character.name.toLowerCase().includes(searchfield.toLowerCase()));
     //     })
 
-        return !characters.length ? 
-        <h1>Loading</h1> :
-        (
+        // return 
+        // !characters.length ? 
+        // <h1>Loading</h1> :
+        return (
+            
             <div className="tc">
-       
-
                 <Router>
-                    <Scroll>
                         <ErrorBoundary>
                             <Route path="/" exact component={Main}/>
                             <Route path="/character/:id" component={CharacterDetail}/>
                         </ErrorBoundary>
-                    </Scroll>
+  
                 </Router>
 
                 <div>

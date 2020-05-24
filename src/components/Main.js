@@ -37,10 +37,12 @@ class Main extends Component {
         <h1>Loading</h1> :
         (
             <div className="tc">
-                <h1>Super Smash BrOthers Ultimate<br/> Characters</h1>
+                <h1>Super Smash Brothers Ultimate<br/> Characters</h1>
                 <SearchBox searchChange={this.onSearchChange}/>
-                
-                <CardList characters={filteredCharacters}/>
+
+                <Scroll>
+                    <CardList characters={filteredCharacters}/>
+                </Scroll>
 
                 <div>
                     <p className="copyright">Zaltick 2020 ©</p>

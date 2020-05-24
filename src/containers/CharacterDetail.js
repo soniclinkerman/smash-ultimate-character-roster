@@ -13,6 +13,8 @@ class CharacterDetail extends Component{
 
     render(){
         const x = characters[this.props.match.params.id - 1]
+        // // const x = characters[this.props.match.params.name]
+        console.log(this.props.match.params)
         return(
             <div>
                 <nav>
@@ -30,7 +32,7 @@ class CharacterDetail extends Component{
 
                     <h1 className="character-name">{x.name}</h1>
                     <p className="character-series">Series: {x.series}</p>
-                    <img className="character-image" src={`${x.images}`} />
+                    <img className="character-image" src={`${x.images}`} alt={x.name} />
                     <p className="character-desc">{x.description}</p>
                     
             </div>
