@@ -24,7 +24,7 @@ p{
 
 .copyright {
     color: #252525;
-    margin: 0;
+    margin-bottom:0 ;
     background: rgba(255, 255, 255, 0.8);
 }
 
@@ -48,6 +48,9 @@ p{
 .body {
     background-color: #ffffff;
     background-image: url("./ultimate_background.jpg");
+    background-size: cover;
+  
+
 }
 
 .main-title{

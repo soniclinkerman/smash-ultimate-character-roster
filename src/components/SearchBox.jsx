@@ -3,14 +3,15 @@ import "./SearchBox.css";
 const SearchBox = ({searchfield, searchChange}) => {
     return(
         <div className="pa2">
-            <label>
+     
                 <input 
+                aria-label="Search-characters"
                 className="pa3 searchbox"
                 type="search" 
                 placeholder="Search character here"
                 onChange={searchChange}
                 />
-            </label>
+    
 
         </div>
     )
