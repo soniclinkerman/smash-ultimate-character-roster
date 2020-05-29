@@ -9,7 +9,7 @@ import CharacterDetail from "../containers/CharacterDetail";
 function App() {
         return (
             
-            <div className="tc">
+            <div className="tc body">
                 <Router>
                         <ErrorBoundary>
                             <Route path="/" exact component={Main}/>
@@ -19,7 +19,7 @@ function App() {
                 </Router>
 
                 <div>
-                    <p className="copyright">Zaltick 2020 ©</p>
+                    <p className="copyright"><strong>Zaltick 2020 ©</strong></p>
                 </div>
 
             </div>
