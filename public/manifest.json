@@ -8,15 +8,22 @@
       "type": "image/x-icon"
     },
     {
-      "src": "Smash_Ball.png",
+      "src": "/andreoid-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "Smash_Ball.png",
+      "src": "/andreoid-chrome-384x384.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "16x16"
     }
+
+
   ],
   "start_url": ".",
   "display": "standalone",
