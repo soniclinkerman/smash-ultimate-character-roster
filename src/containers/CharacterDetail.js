@@ -12,9 +12,11 @@ class CharacterDetail extends Component{
     }
 
     render(){
-        const x = characters[this.props.match.params.id - 1]
+        // let x = characters[this.props.match.params.id - 1].name
         // // const x = characters[this.props.match.params.name]
-        console.log(this.props.match.params)
+        const x = characters.filter(character => character.name.toLowerCase() === this.props.match.params.id.toLowerCase())[0];
+        // console.log(characters.filter(character => character.name === this.props.match.params.id))
+
         return(
             <div>
                 <nav>

@@ -3,40 +3,10 @@ import React from "react";
 import "./App.css"
 import ErrorBoundary from "../components/ErrorBoundary";
 import { BrowserRouter as Router, Route} from "react-router-dom";
-import Main from "../components/Main";
+import Main from "./Main";
 import CharacterDetail from "../containers/CharacterDetail";
 
 function App() {
-    // constructor(props){
-    //     super(props);
-    //     this.state = {
-    //         characters: [],
-    //         searchfield: ""
-    //     }
-    //     this.onSearchChange = this.onSearchChange.bind(this);
-    // }
-
-    // componentDidMount(){
-    //     this.setState({
-    //         characters: characters
-    //     })
-    // }
-
-    // onSearchChange(e){
-    //     this.setState({
-    //         searchfield: e.target.value
-    //     })
-    // }
-
-    // render(){
-    //     const {characters, searchfield} = this.state;
-    //     const filteredCharacters = characters.filter(character => {
-    //         return (character.name.toLowerCase().includes(searchfield.toLowerCase()));
-    //     })
-
-        // return 
-        // !characters.length ? 
-        // <h1>Loading</h1> :
         return (
             
             <div className="tc">

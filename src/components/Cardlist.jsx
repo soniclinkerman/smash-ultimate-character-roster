@@ -9,7 +9,7 @@ const CardList = ({ characters}) => {
         {
             characters.map((character, i) => {
                 return (
-                <Link  key={i}  to={`/character/${character.id}`}>
+                <Link  key={i}  to={`/character/${character.name}`}>
                 <Card 
                
                 id={characters[i].id} 
